@@ -1,4 +1,4 @@
-class Queue {
+export class Queue {
     constructor() {
         //생성자 함수로 빈배열(큐) 생정
         this.arr = [];
