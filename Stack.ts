@@ -5,36 +5,36 @@ class Stack {
   }
 
   //스택에 요소 삽입
-  push(value: number) {
+  push(value: number): number | void {
     return this.arr.push(value);
   }
 
   //스택의 맨위 요소 제거
-  pop() {
+  pop(): number | undefined {
     return this.arr.pop();
   }
 
   //스택의 맨위 요소 확인 peek
-  top() {
+  top(): number | undefined {
     //at(-1) = 배열의 맨뒤 요소 확인
     return this.arr.at(-1);
   }
 
   //get 키워드는 클래스 내에서 사용되는 특별한 메서드나 속성앞에 붙여서 해당 메서드나 속성을 정의하는데 사용
-  get length() {
+  get length(): number {
     return this.arr.length;
   }
   //일반 함수로 선언
-  leength() {
+  leength(): number {
     return this.arr.length;
   }
 
   //배열반환
-  getarr() {
+  getarr(): number[] {
     return this.arr;
   }
 
-  obj() {
+  obj(): string[] {
     return Object.keys(this.arr);
   }
 }
